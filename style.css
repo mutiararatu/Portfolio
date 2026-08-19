@@ -25,6 +25,17 @@ body {
     text-decoration: none;
     color: #555;
     font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: var(--pink);
+    transform: translateY(-2px);
+}
+
+.nav-links a:active {
+    transform: scale(0.9);
 }
 
 /* HERO 1 */
@@ -129,6 +140,16 @@ body {
     border-radius: 10px;
     color: white;
     font-family: 'Poppins', sans-serif;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+    background: #e07293;
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: scale(0.95);
 }
 
 .hero-right img {
@@ -357,4 +378,9 @@ body {
 .contact-item:hover {
     background: var(--green);
     color: #fff;
+    transform: translateY(-3px);
+}
+
+.contact-item:active {
+    transform: scale(0.95);
 }
